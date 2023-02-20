@@ -1,0 +1,25 @@
+body {
+  font-family: 'Bebas Neue', cursive;
+}
+
+.container {
+  width: 700px;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+}
+
+.letter {
+  list-style: none;
+  color: white;
+  font-size: 2em;
+  padding: 5px 15px;
+  margin: 0 10px;
+  border-radius: 20px;
+}
+
+.form {
+  ;
+}

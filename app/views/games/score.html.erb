@@ -1,0 +1,17 @@
+<div class="container">
+  <h1>Result</h1>
+
+  <h2>Your Guess: <%= @guess %></h2>
+  <h2>The grid: <%= @letters %></h2>
+
+  <% if @exists && @used_once && @english_word %>
+  <p><%= 'YOU DID IT' %></p>
+  <% elsif @exists && @used_once && @english_word == false %>
+  <p><%= 'NICE TRY BUT NO ENGLISH WORD' %></p>
+  <% elsif @exists == false && @used_once == false && @english_word %>
+  <p><%= 'WOW ENGLISH! BUT NOT IN THE GRID' %></p>
+  <% else %>
+  <p><%= 'TOTAL FAIL! NO ENGLISH AND NOT IN THE GRID' %></p>
+  <% end %>
+  <%= link_to "Play again?", new_path %>
+</div>
